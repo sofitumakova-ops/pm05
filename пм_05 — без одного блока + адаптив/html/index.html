@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>tumakova</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <div class="jcsb">
+        <div class="content jcsb">
             <div class="logo">STUDENT_DEV</div>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div class="navigation jcsb">
-                <a href="#about">Обо мне</a>
-                <a href="#skills">Навыки</a>
-                <a href="#projects">Проекты</a>
-                <a href="#faq">FAQ</a>
+                <a href="#about" class="active">Обо мне</a>
+                <a href="#projects" class="active">Проекты</a>
+                <a href="#faq" class="active">FAQ</a>
                 <button>Связаться</button>
             </div>
         </div>
@@ -35,6 +42,14 @@
                 </div>
             </div>
         </div>
+        
+            <div id="info-popup" class="info-popup">
+                <div class="info-content">
+                    <p>📚 Этот сайт создан в учебных целях. Все материалы носят демонстрационный характер.</p>
+                    <button id="close-info">Закрыть</button>
+                </div>
+            </div>
+
         <div class="about" id="about">
             <div class="content jcsb">
                 <h2>Обо мне</h2>
@@ -55,16 +70,55 @@
                 </div>
             </div>
         </div>
-        <div class="skills" id="skills">
-            <div class="content">
-                <h2>Технологии стек</h2>
-            </div>
-        </div>
+        
         <div class="projects" id="projects">
             <div class="content">
                 <h2>Проекты</h2>
+                <p>Учебные работы, выполненные в рамках курса разработки.</p>
+                <div class="card jcsb">
+                    <div>
+                        <div class="image-container">
+                            <img src="../png/unnamed (3).png">
+                        </div>
+                        <div class="description">
+                            <section>
+                                <div>HTML</div>
+                                <div>CSS</div>
+                            </section>
+                            <h4>Верстка копии сайта</h4>
+                            <p>Пиксельно точное воспроизведение лендинга для отработки навыков CSS-верстки и адаптивного дизайна.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image-container">
+                            <img src="../png/unnamed (2).png">
+                        </div>
+                        <div class="description">
+                            <section>
+                                <div>HTML</div>
+                                <div>CSS</div>
+                            </section>
+                            <h4>Многостраничный сайт</h4>
+                            <p>Сложный макет с несколькими взаимосвязанными страницами, фокус на архитектуре навигации и переиспользуемых шаблонах.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image-container">
+                            <img src="../png/unnamed (1).png">
+                        </div>
+                        <div class="description">
+                            <section>
+                                <div>HTML</div>
+                                <div>CSS</div>
+                            </section>
+                            <h4>Окно регистрации</h4>
+                            <p>Интерактивный UI-компонент с валидацией форм и логикой модальных окон.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="faq" id="faq">
             <div class="content jcsb">
                 <h2>Часто задоваемые вопросы</h2>
@@ -85,15 +139,16 @@
                 </div>
             </div>
         </div>
+
         <div class="contact" id="contact">
             <div class="content jcsb">
                 <div class="text">
                     <h2>Давайте создадим <br> что-то вместе</h2>
                     <p>Готовы обсудить проект или вакансию? Напишите мне, и я отвечу в течение рабочего дня.</p>
-                    <div class="mail">
+                    <section>
                         <div>✉</div>
-                        <p>почта</p>
-                    </div>
+                        <p>sofitumakova@gmail.com</p>
+                    </section>
                     <div class="communication">
                         <p>GitHub</p>
                         <p>Telegram</p>
@@ -106,7 +161,7 @@
                     <section><label for="email">Email:</label>
                     <input type="email" placeholder="ivan@example.com"></section>
                     <section><label for="text">Сообщение</label>
-                    <input type="text" id="text" placeholder="Расскажите о вашем проекте..."></section>
+                    <textarea placeholder="Расскажите о вашем проекте..."></textarea>
                     <button>ОТПРАВИТЬ СООБЩЕНИЕ</button>
                 </div>    
             </div>
@@ -124,5 +179,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
