@@ -60,7 +60,6 @@ if (!notificationClosed) {
     }, 1500);
 }
 
-
 if (closeBtn) {
     closeBtn.addEventListener('click', function() {
         infoPopup.classList.remove('show');

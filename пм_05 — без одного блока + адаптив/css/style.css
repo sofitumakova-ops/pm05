@@ -320,20 +320,45 @@ main{
     gap: 24px;
 }
 
-.text section{
+.email-block {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.email-block p{
+    font-size: 20px;
+}
+
+.email-block section{
     font-size: 26px;
     display: flex;
     align-items: center;
     gap:24px;
+    transition: all 0.3s ease;
 }
 
-.text section div{
+.email-block section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     height: 40px;
     width: 40px;
     border-radius: 12px;
     color: #FFFAF8;
     background-color: #3B342A;
+    transition: all 0.3s ease;
+}
+
+.email-block:hover section div {
+    background-color: #EFDBC9;
+    color: #18120B;
+    
+}
+
+.email-block:hover section p {
+    color: #EFDBC9;
 }
 
 .fill{
@@ -686,7 +711,7 @@ footer .logo{
         text-align: center;
     }
 
-    .text section {
+    .email-block section {
         justify-content: center;
     }
 

@@ -145,25 +145,26 @@
                 <div class="text">
                     <h2>Давайте создадим <br> что-то вместе</h2>
                     <p>Готовы обсудить проект или вакансию? Напишите мне, и я отвечу в течение рабочего дня.</p>
-                    <section>
-                        <div>✉</div>
-                        <p>sofitumakova@gmail.com</p>
-                    </section>
+                    <a href="mailto:sofitumakova@gmail.com" class="email-block">
+                        <section>
+                            <div>✉</div>
+                            <p>sofitumakova@gmail.com</p>
+                        </section>
+                    </a>
                     <div class="communication">
                         <p>GitHub</p>
                         <p>Telegram</p>
-                        <p>LinkedIn</p>
                     </div>
                 </div>
-                <div class="fill jcsb">
+                <form class="fill jcsb" action="submit.php" method="POST">
                     <section><label for="name">Имя</label>
-                    <input type="text" placeholder="Иван Иванович"></section>
+                    <input type="text" name="name" placeholder="Иван Иванович"></section>
                     <section><label for="email">Email:</label>
-                    <input type="email" placeholder="ivan@example.com"></section>
-                    <section><label for="text">Сообщение</label>
-                    <textarea placeholder="Расскажите о вашем проекте..."></textarea>
-                    <button>ОТПРАВИТЬ СООБЩЕНИЕ</button>
-                </div>    
+                    <input type="email" name="email" placeholder="ivan@example.com"></section>
+                    <section><label for="message">Сообщение</label>
+                    <textarea name="message" placeholder="Расскажите о вашем проекте..."></textarea>
+                    <button type="submit">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                </form>    
             </div>
         </div>
     </main>
@@ -173,7 +174,6 @@
             <p>© 2026 Developer Portfolio. Built with precision.</p>
             <div class="communication">
                 <p>GitHub</p>
-                <p>LinkedIn</p>
                 <p>Twitter</p>
                 <p>Email</p>
             </div>
