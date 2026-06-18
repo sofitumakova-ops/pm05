@@ -201,7 +201,15 @@ main{
     padding: 24px;
 }
 
-.card > div{
+.card-link {
+    text-decoration: none;        /* убираем подчеркивание */
+    color: inherit;              /* наследуем цвет текста */
+    display: block;              /* ссылка становится блочной, как div */
+    /* размеры не задаем — они наследуются от вложенного div */
+    
+}
+
+.card-link > div{
     border-radius: 8px;
     background-color: #251F16;
     width: 368px;
@@ -317,7 +325,12 @@ main{
 
 .communication{
     display: flex;
+    margin-top:20px;
     gap: 24px;
+}
+
+.communication a {
+    text-decoration: none;
 }
 
 .email-block {
@@ -684,7 +697,7 @@ footer .logo{
         gap: 24px;
     }
 
-    .card > div {
+    .card-link > div {
         width: 100%;
         max-width: 400px;
         height: auto;
