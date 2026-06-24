@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>tumakova</title>
+    <meta name="description">
+    <title>Tumakova — портфолио веб-разработчика</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -16,12 +19,12 @@
                 <span></span>
             </div>
 
-            <div class="navigation jcsb">
-                <a href="#about" class="active">Обо мне</a>
-                <a href="#projects" class="active">Проекты</a>
-                <a href="#faq" class="active">FAQ</a>
-                <button>Связаться</button>
-            </div>
+            <nav class="navigation jcsb">
+                <a href="#about">Обо мне</a>
+                <a href="#projects">Проекты</a>
+                <a href="#faq">FAQ</a>
+                <button type="button" class="btn-contact">Связаться</button>
+            </nav>
         </div>
     </header>
     <main>
@@ -32,12 +35,12 @@
                     <h1>Продуманный код, безупречный дизайн</h1>
                     <p>Студент-разработчик, создающий современные цифровые решения с акцентом на производительность и чистоту кода. Превращаю сложные задачи в элегантные интерфейсы.</p>
                     <div class="hero-button">
-                        <button>Связаться со мной</button>
-                        <button>Мои проекты</button>
+                        <button type="button" class="btn-contact">Связаться со мной</button>
+                        <button type="button" class="btn-projects">Мои проекты</button>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="../png/unnamed.png">
+                    <img src="../png/unnamed.png" alt="">
                     <div class="frame"></div>
                 </div>
             </div>
@@ -54,16 +57,16 @@
             <div class="content jcsb">
                 <h2>Обо мне</h2>
                 <div class="about-block">
-                    <div>
+                    <div class="about-main">
                         <h3>Путь разработчика</h3>
                         <p>Я студентка 3 курса, и моя сила — в сочетании академических знаний с реальной практикой. Я стараюсь писать код без лишних повторений, простыми и понятными решениями, а также глубоко понимать, как устроены современные веб-приложения.</p>
                         <p>Мне нравится создавать инструменты, которые не просто работают, а приносят пользователю эстетическое удовольствие. Моя цель — чистый, аккуратный код, который легко развивать и на который можно положиться.</p>
                     </div>
-                    <div>
+                    <div class="about-card">
                         <h4>Чистота кода</h4>
                         <p>Строгая типизация и соблюдение стандартов</p>
                     </div>
-                    <div>
+                    <div class="about-card">
                         <h4>Производительность</h4>
                         <p>Внимание к скорости загрузки и плавности интерфейсов.</p>
                     </div>
@@ -76,46 +79,46 @@
                 <h2>Проекты</h2>
                 <p>Учебные работы, выполненные в рамках курса разработки.</p>
                 <div class="card jcsb">
-                    <a href="https://github.com/sofitumakova-ops/copy-of-website" target="_blank" class="card-link">
+                    <a href="https://github.com/sofitumakova-ops/copy-of-website" target="_blank" rel="noopener noreferrer" class="card-link">
                         <div>
                             <div class="image-container">
-                                <img src="../png/unnamed (3).png">
+                                <img src="../png/unnamed (3).png" alt="">
                             </div>
                             <div class="description">
-                                <section>
-                                    <div>HTML</div>
-                                    <div>CSS</div>
-                                </section>
+                                <div class="tags">
+                                    <div class="tag">HTML</div>
+                                    <div class="tag">CSS</div>
+                                </div>
                                 <h4>Верстка копии сайта</h4>
                                 <p>Практическая работа по верстке лендинга с упором на соответствие макету и адаптивную верстку.</p>
                             </div>
                         </div>
                     </a>
-                    <a href="https://github.com/sofitumakova-ops/css-animation" target="_blank" class="card-link">    
+                    <a href="https://github.com/sofitumakova-ops/css-animation" target="_blank" rel="noopener noreferrer" class="card-link">    
                         <div>
                             <div class="image-container">
-                                <img src="../png/unnamed (2).png">
+                                <img src="../png/unnamed (2).png" alt="">
                             </div>
                             <div class="description">
-                                <section>
-                                    <div>HTML</div>
-                                    <div>CSS ANIMATION</div>
-                                </section>
+                                <div class="tags">
+                                    <div class="tag">HTML</div>
+                                    <div class="tag">CSS ANIMATION</div>
+                                </div>
                                 <h4>Отработка CSS-анимаций</h4>
                                 <p>Учебный проект по применению ключевых кадров, трансформаций и переходов для оживления интерфейса.</p>
                             </div>
                         </div>
                     </a>
-                    <a href="https://github.com/sofitumakova-ops/Forms" target="_blank" class="card-link">
+                    <a href="https://github.com/sofitumakova-ops/Forms" target="_blank" rel="noopener noreferrer" class="card-link">
                         <div>
                             <div class="image-container">
-                                <img src="../png/unnamed (1).png">
+                                <img src="../png/unnamed (1).png" alt="">
                             </div>
                             <div class="description">
-                                <section>
-                                    <div>HTML</div>
-                                    <div>CSS</div>
-                                </section>
+                                <div class="tags">
+                                    <div class="tag">HTML</div>
+                                    <div class="tag">CSS</div>
+                                </div>
                                 <h4>Окно регистрации</h4>
                                 <p>Практическая работа по оформлению полей ввода, кнопок и состояний формы с использованием CSS.</p>
                             </div>
@@ -127,7 +130,7 @@
 
         <div class="faq" id="faq">
             <div class="content jcsb">
-                <h2>Часто задоваемые вопросы</h2>
+                <h2>Часто задаваемые вопросы</h2>
                 <div class="faq-item">
                     <input type="checkbox" id="faq1">
                     <label for="faq1">С какими технологиями вы работаете?</label>
@@ -158,17 +161,17 @@
                         </section>
                     </a>
                     <div class="communication">
-                        <a href="https://github.com/sofitumakova-ops" target="_blank">GitHub</a>
-                        <a href="https://t.me/ggrrgrgrgg" target="_blank">Telegram</a>
+                        <a href="https://github.com/sofitumakova-ops" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://t.me/ggrrgrgrgg" target="_blank" rel="noopener noreferrer">Telegram</a>
                     </div>
                 </div>
                 <form class="fill jcsb" action="submit.php" method="POST">
                     <section><label for="name">Имя</label>
-                    <input type="text" name="name" placeholder="Иван Иванович"></section>
+                    <input type="text" id="name"  name="name" placeholder="Иван Иванович"></section>
                     <section><label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="ivan@example.com"></section>
+                    <input type="email" id="email" name="email" placeholder="ivan@example.com"></section>
                     <section><label for="message">Сообщение</label>
-                    <textarea name="message" placeholder="Расскажите о вашем проекте..."></textarea>
+                    <textarea id="message" name="message" placeholder="Расскажите о вашем проекте..."></textarea>
                     <button type="submit">ОТПРАВИТЬ СООБЩЕНИЕ</button>
                 </form>    
             </div>
@@ -179,8 +182,8 @@
             <div class="logo">STUDENT_DEV</div>
             <p>© 2026 Developer Portfolio. Built with precision.</p>
             <div class="communication">
-                <a href="https://github.com/sofitumakova-ops" target="_blank">GitHub</a>
-                <a href="https://t.me/ggrrgrgrgg" target="_blank">Telegram</a>
+                <a href="https://github.com/sofitumakova-ops" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://t.me/ggrrgrgrgg" target="_blank" rel="noopener noreferrer">Telegram</a>
                 <a href="mailto:sofitumakova@gmail.com">Email</a>
             </div>
         </div>
