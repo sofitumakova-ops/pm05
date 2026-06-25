@@ -300,7 +300,7 @@ main{
     justify-content: space-between;
     background-color: #251F16;
     color: #FFFAF8;
-    width: 768px;
+    width: 784px;
     padding: 24px 32px;
     border-radius: 8px;
     cursor: pointer;
@@ -319,7 +319,7 @@ main{
     transition: transform 0.3s ease;
 }
 
-.faq-item label:hover::after {
+ .faq-item input:checked ~ label::after {
     transform: translateY(-50%) rotate(180deg);
 }
 
