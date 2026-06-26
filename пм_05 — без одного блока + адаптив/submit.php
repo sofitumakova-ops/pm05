@@ -1,10 +1,10 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 
-$host = 'localhost';
-$user = 'username';
-$password = 'password';
-$database = 'applications';
+$host = 'sql306.infinityfree.com';
+$user = 'if0_42265673';
+$password = 'fIVIorFIZqZE';  // ВСТАВЬ СВОЙ ПАРОЛЬ
+$database = 'if0_42265673_applications';
 
 $conn = new mysqli($host, $user, $password, $database);
 $conn->set_charset("utf8");

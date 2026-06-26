@@ -319,7 +319,8 @@ main{
     transition: transform 0.3s ease;
 }
 
- .faq-item input:checked ~ label::after {
+
+.faq-item input:checked ~ label::after {
     transform: translateY(-50%) rotate(180deg);
 }
 
@@ -726,7 +727,7 @@ footer .logo{
         gap: 24px;
     }
 
-    .card-link > div {
+    .card > div {
         width: 100%;
         max-width: 400px;
         height: auto;
@@ -753,7 +754,7 @@ footer .logo{
         text-align: center;
     }
 
-    .email-block section {
+    .text section {
         justify-content: center;
     }
 
